@@ -4,7 +4,7 @@
   "dependencies": {
     "@google-cloud/storage": "^4.7.2",
     "ffmpeg-static": "^4.4.1",
-    "firebase-admin": "^11.9.0",
+    "firebase-admin": "^11.10.1",
     "firebase-functions": "^4.4.1",
     "fluent-ffmpeg": "^2.1.2"
   },

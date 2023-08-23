@@ -3,7 +3,7 @@
   "description": "Convert images to JPEG Firebase Functions sample",
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "firebase-admin": "^11.9.0",
+    "firebase-admin": "^11.10.1",
     "firebase-functions": "^4.4.1",
     "mkdirp": "^1.0.4"
   },
