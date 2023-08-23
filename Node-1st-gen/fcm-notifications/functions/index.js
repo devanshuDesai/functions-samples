@@ -15,7 +15,7 @@
  */
 'use strict';
 
-const functions = require('firebase-functions/v1');
+const functions = require('firebase-functions/v2');
 const admin = require('firebase-admin');
 admin.initializeApp();
 
@@ -31,12 +31,13 @@ exports.sendFollowerNotification = functions.database.ref('/followers/{followedU
       const followedUid = context.params.followedUid;
       // If un-follow we exit the function.
       if (!change.after.val()) {
-        return functions.logger.log(
+        functions.logger.log(
           'User ',
           followerUid,
           'un-followed user',
           followedUid
         );
+          return null;
       }
       functions.logger.log(
         'We have a new follower UID:',
